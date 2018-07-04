@@ -1,6 +1,6 @@
 # Notebook
 
-INSTALLATION
+Instaltion
 ------------------
 
 1. Download project and unzip the folder 

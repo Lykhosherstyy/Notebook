@@ -1,0 +1,49 @@
+.root{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.list{
+  :global .item{
+    position: relative;
+    flex: 1 100%;
+    margin-bottom: 20px;
+    padding: 10px 80px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    .panel{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top:10px;
+      right:10px;
+      bottom: 10px;
+    }
+  }
+}
+
+.grid{
+  :global .item{
+    flex: 1 calc(50% - 10px);
+    margin:5px;
+    padding: 10px 10px 60px 10px;
+    .panel{
+      flex-flow: row wrap;
+      top:auto;
+      left:10px;
+    }
+  }
+}
+
+.emptyList{
+  flex:1;
+  padding: 20px;
+  text-align: center;
+  color: #acacaf;
+  font-size:24px;
+  font-weight:bold;
+  background-color: #fff;
+}
